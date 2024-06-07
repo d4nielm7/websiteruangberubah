@@ -1,21 +1,3 @@
-/* Global */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-a {
-    color: #ffffff; /* White text */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #b3b3b3; /* Light grey on hover */
-}
-
 /* Header Component */
 
 .head {
@@ -33,32 +15,89 @@ a:hover {
     height: 40px;
 }
 
-.head ul {
-    list-style-type: none;
+.nav-left {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    align-items: center;
 }
 
-.head ul li {
+.hamburger {
+    background: none;
+    border: none;
+    color: #ffffff; /* White color */
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #000000; /* Black background */
+    box-shadow: 0 0 0.7rem rgba(31, 45, 61, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Space for the close button */
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #ffffff; /* White color */
+    font-size: 24px;
     cursor: pointer;
 }
 
-.head ul li a {
-    font-size: 16px;
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.side-nav ul li {
+    margin: 20px 0;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    font-style: none;
+    font-size: 20px;
     font-weight: 500;
     color: #ffffff; /* White text */
     transition: color 0.3s;
 }
 
-.head ul li a:hover {
+.side-nav ul li a:hover {
     color: #b3b3b3; /* Light grey on hover */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    border: 2px solid #64E044; /* Match the green color */
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    font-size: 16px;
 }
 
 .signup-button {
     padding: 10px 20px;
-    background-color: #1bc81b; /* Green color similar to the leaf in the logo */
+    background-color: #64E044; /* Green color similar to the leaf in the logo */
     color: white;
     border: none;
     border-radius: 20px; /* Rounded corners */
@@ -69,5 +108,5 @@ a:hover {
 }
 
 .signup-button:hover {
-    background-color: #008000; /* Darker green on hover */
+    background-color: #3FA52B; /* Darker green on hover */
 }
