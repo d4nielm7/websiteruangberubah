@@ -11,7 +11,7 @@ const header = () => {
       <ul>
         <li><a href="#About">About us</a></li>
         <li><a href="service">Service</a></li>
-        <li><a href="#myproject">contact</a></li>
+        <li><a href="#myproject">Contact</a></li>
       </ul> 
 
       <button className='signup-button'>Sign Up</button>

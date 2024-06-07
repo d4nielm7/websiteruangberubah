@@ -33,10 +33,6 @@ a:hover {
     height: 40px;
 }
 
-.nav-left {
-    display: flex;
-}
-
 .head ul {
     list-style-type: none;
     display: flex;
@@ -62,7 +58,7 @@ a:hover {
 
 .signup-button {
     padding: 10px 20px;
-    background-color: #00b300; /* Green color similar to the leaf in the logo */
+    background-color: #1bc81b; /* Green color similar to the leaf in the logo */
     color: white;
     border: none;
     border-radius: 20px; /* Rounded corners */
