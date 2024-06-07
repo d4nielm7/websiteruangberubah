@@ -1,0 +1,77 @@
+/* Global */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b3b3b3; /* Light grey on hover */
+}
+
+/* Header Component */
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000000; /* Black background */
+    box-shadow: 0 0 0.7rem rgba(31, 45, 61, .3);
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.head ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.head ul li {
+    cursor: pointer;
+}
+
+.head ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff; /* White text */
+    transition: color 0.3s;
+}
+
+.head ul li a:hover {
+    color: #b3b3b3; /* Light grey on hover */
+}
+
+.signup-button {
+    padding: 10px 20px;
+    background-color: #00b300; /* Green color similar to the leaf in the logo */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #008000; /* Darker green on hover */
+}
