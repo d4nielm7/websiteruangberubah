@@ -20,13 +20,16 @@ const Header = () => {
 
           <div className='side-nav'>
             <button className='close-btn' onClick={toggleNav}>
-              <i className='material-icons'>X</i>
+              <i className='material-icons'>☰</i>
             </button>
 
             <ul>
               <li><a href="#About">About us</a></li>
-              <li><a href="service">Service</a></li>
-              <li><a href="#myproject">Contact</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#Partners">Partners</a></li>
+              <li><a href="#Members">Members</a></li>
+              <li><a href="#Shops">Shops</a></li>
             </ul>
 
           </div>
