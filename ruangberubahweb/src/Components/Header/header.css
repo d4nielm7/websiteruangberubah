@@ -87,19 +87,24 @@
 }
 
 .search-bar {
-    padding: 10px;
-    border-radius: 20px;
-    outline: none;
-    margin-right: 10px;
-    font-size: 16px;
-}
+    transition: width 0.3s ease-in-out;
+    width: 40px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  
+.search-icon-container:hover .search-bar {
+    width: 200px;
+  }
 
 .signup-button {
     padding: 10px 20px;
     background-color: #64E044; /* Green color similar to the leaf in the logo */
     color: white;
-    border: none;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;

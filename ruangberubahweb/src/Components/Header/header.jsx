@@ -38,7 +38,14 @@ const Header = () => {
       </div>
 
       <div className='search-container'>
-        <input type="text" className='search-bar' placeholder='Search...' />
+        <div className='search-icon-container'>
+          <i className='material-icons search-icon'>search</i>
+          <input
+            type="text"
+            className='search-bar'
+            placeholder='Type to search'
+          />
+        </div>
         <button className='signup-button'>Sign Up</button>
       </div>
 
