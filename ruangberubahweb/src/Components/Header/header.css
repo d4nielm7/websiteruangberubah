@@ -112,6 +112,7 @@
 .search-bar {
     transition: width 0.3s ease-in-out;
     width: 40px;
+    outline: none;
     padding: 10px 20px;
     height:64px;
     background-color: #333;
