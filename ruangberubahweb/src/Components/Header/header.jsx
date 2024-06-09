@@ -39,7 +39,7 @@ const Header = () => {
 
       <div className='search-container'>
         <div className='search-icon-container'>
-          <i className='material-icons search-icon'>search</i>
+          <i className='material-icons search-icon'>⌕</i>
           <input
             type="text"
             className='search-bar'
