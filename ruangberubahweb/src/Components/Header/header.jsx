@@ -4,6 +4,7 @@ import small_logo from '../../assets/smalllogo.png';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -37,17 +38,7 @@ const Header = () => {
         )}
       </div>
 
-      <div className='search-container'>
-        <div className='search-icon-container'>
-          <i className='material-icons search-icon'>⌕</i>
-          <input
-            type="text"
-            className='search-bar'
-            placeholder='Type to search'
-          />
-        </div>
-        <button className='signup-button'>Sign Up</button>
-      </div>
+      <button className='signup-button'>Sign Up</button>
 
     </div>
   );
