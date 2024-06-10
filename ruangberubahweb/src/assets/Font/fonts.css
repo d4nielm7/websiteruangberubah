@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('./static/LeagueSpartan-ExtraBold.ttf') format('truetype');
+    font-weight: ExtraBold;
+    font-style:ExtraBold;
+  }

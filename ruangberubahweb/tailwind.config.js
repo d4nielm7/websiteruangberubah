@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx,css}", // Adjust the paths according to your project structure
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'league-spartan': ['League Spartan','sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

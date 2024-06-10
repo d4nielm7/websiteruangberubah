@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './header.css';
-import small_logo from '../../assets/smalllogo.png';
+import small_logo from '../../assets/pic/smalllogo.png';
+import { motion } from 'framer-motion';
+import { useSpring, animated } from '@react-spring/web';
+import styled from 'styled-components';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -10,16 +13,23 @@ const Header = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const menuAnimation = useSpring({
+    transform: isNavOpen ? 'translateX(0%)' : 'translateX(-100%)',
+    opacity: isNavOpen ? 1 : 0,
+  });
+
+
   return (
-    <div className='head'>
+    <div className='head font-league-spartan'>
       <div className='nav-left'>
         <button className='hamburger' onClick={toggleNav}>
           <i className='material-icons'>☰</i>
         </button>
         <img src={small_logo} alt="Logo" className='logo' />
+        <animated.div style={menuAnimation} className="side-nav">
         {isNavOpen && (
-
           <div className='side-nav'>
+             
             <button className='close-btn' onClick={toggleNav}>
               <i className='material-icons'>☰</i>
             </button>
@@ -32,10 +42,11 @@ const Header = () => {
               <li><a href="#Members">Members</a></li>
               <li><a href="#Shops">Shops</a></li>
             </ul>
-
+          
           </div>
 
         )}
+        </animated.div>
       </div>
 
       <button className='signup-button'>Sign Up</button>
