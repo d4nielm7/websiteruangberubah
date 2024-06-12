@@ -1,6 +1,6 @@
 import React from 'react';
 import bwPodcast from '../../assets/pic/group2blackwhite.png';
-
+import './home.css'; 
 const Home = () => {
   return (
     <div 
@@ -21,6 +21,7 @@ const Home = () => {
           <hr className="border-t-2 mx-auto" style={{ borderColor: '#7ed957', width: '25%' }} />
         </div>
       </div>
+      <div className="bottom-slice"></div>
     </div>
   );
 };

@@ -1,15 +1,18 @@
 /* Header Component */
 
 .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    z-index: 1000;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 0 0 20px; 
-    background-color: #000000; /* Black background */
-    box-shadow: 0 0 0.7rem rgba(31, 45, 61, .3);
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    height: 64px; /* Set a fixed height for the header */
-}
+    align-items: center;
+    padding: 1rem;
+  }
 
 .logo {
     height: 40px;
@@ -82,16 +85,27 @@
 }
 
 .signup-button {
-    height:64px;
-    padding: 0 35px; 
-    background-color: #7ed957; /* Green color similar to the leaf in the logo */
-    color: white;
+    background-color: #7ed957;
+    color: #000;
+    border: none;
+    padding: 0.75rem 5rem;
+    border-radius: 25px; /* Adjust as needed */
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .signup-button:hover {
+    background: linear-gradient(to right, #76c7ff, #7ed957);
+  }
 
-.signup-button:hover {
-    background-color: #3FA52B; /* Darker green on hover */
+@media (max-width: 768px) {
+    .head {
+      flex-direction: column;
+    }
+  
+    .signup-button {
+      margin-top: 1rem;
+    }
 }

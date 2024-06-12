@@ -1,0 +1,17 @@
+.Home {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bottom-slice {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; 
+    background-color: #000; 
+    transform: skewY(-5deg);
+    transform-origin: bottom right;
+  }
+
+  
