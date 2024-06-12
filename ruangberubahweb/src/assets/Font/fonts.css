@@ -1,6 +1,13 @@
 @font-face {
-    font-family: 'League Spartan';
-    src: url('./static/LeagueSpartan-ExtraBold.ttf') format('truetype');
-    font-weight: ExtraBold;
-    font-style:ExtraBold;
-  }
+  font-family: 'Raleway';
+  src: url('./Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('./League Spartan/static/LeagueSpartan-ExtraBold.ttf') format('truetype');
+  font-weight: ExtraBold;
+  font-style: ExtraBold;
+}
