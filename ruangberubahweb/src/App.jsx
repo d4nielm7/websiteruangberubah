@@ -2,15 +2,18 @@ import React from 'react';
 import Header from './Components/Header/header';
 import Home from './Components/Home/home';
 import About from './Components/About/about';
+import VisionMision from './Components/VisionMision/visionmision';
 import './tailwind.css';
 import './assets/Font/fonts.css';
+
 
 const App = () => {
   return (
     <div className='Main'>
       <Header />
       <Home />
-      <About/>
+      <About />
+      <VisionMision/>
     </div>
   );
 }
