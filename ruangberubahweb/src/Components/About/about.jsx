@@ -3,7 +3,7 @@ import coffeeandtalk from '../../assets/pic/group1.jpeg';
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-black text-white h-screen space-y-8 md:space-y-0 md:space-x-8 -mt-56"> 
+    <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-black text-white h-screen space-y-8 md:space-y-0 md:space-x-8 -mt-24"> {/*adjust mt for resolution*/}
       {/* Left */}
       <div className="flex flex-col max-w-lg md:mr-8 space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold font-raleway">
