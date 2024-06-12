@@ -11,3 +11,10 @@
   font-weight: ExtraBold;
   font-style: ExtraBold;
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../assets/Font/Inter/static/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

@@ -35,11 +35,13 @@ const Header = () => {
             </button>
 
             <ul>
-              <li><a href="#About">About us</a></li>
+            <li><a href="#About-us">About us</a></li>
               <li><a href="#Services">Services</a></li>
               <li><a href="#Contact">Contact</a></li>
               <li><a href="#Partners">Partners</a></li>
               <li><a href="#Members">Members</a></li>
+              <li><a href="#Careers">Careers</a></li>
+              <li><a href="#Blogs">Blogs</a></li>
               <li><a href="#Shops">Shops</a></li>
             </ul>
           

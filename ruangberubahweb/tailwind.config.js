@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'league-spartan': ['League Spartan', 'sans-serif'],
         'raleway': ['Raleway', 'sans-serif'],
+        'inter':['Inter','sans-serif'],
       },
     },
   },
