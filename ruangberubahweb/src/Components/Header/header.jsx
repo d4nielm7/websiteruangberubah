@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const navigate = useNavigate();  // Initialize the useNavigate hook
+  const navigate = useNavigate(); 
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -18,7 +18,13 @@ const Header = () => {
   });
 
   const handleSignInClick = () => {
-    navigate('/signup');  // Use navigate to go to the /signin page
+    navigate('/contact');  
+  };
+  
+  const handleLogoClick = () => {
+    navigate('/'); 
+    window.location.reload(true);
+    window.scrollTo(0, 0); 
   };
 
   return (
@@ -27,7 +33,7 @@ const Header = () => {
         <button className='hamburger' onClick={toggleNav}>
           <i className='material-icons'>☰</i>
         </button>
-        <img src={small_logo} alt="Logo" className='logo' />
+        <img src={small_logo} alt="Logo" className='logo' onClick={handleLogoClick}/>
         <animated.div style={menuAnimation} className="side-nav">
           {isNavOpen && (
             <div className='side-nav'>
@@ -37,7 +43,6 @@ const Header = () => {
               <ul>
                 <li><a href="#About-us">About us</a></li>
                 <li><a href="#Services">Services</a></li>
-                <li><a href="#Contact">Contact</a></li>
                 <li><a href="#Partners">Partners</a></li>
                 <li><a href="#Members">Members</a></li>
                 <li><a href="#Careers">Careers</a></li>
@@ -48,7 +53,7 @@ const Header = () => {
           )}
         </animated.div>
       </div>
-      <button className='signup-button' onClick={handleSignInClick}>Sign Up</button>
+      <button className='right-button' onClick={handleSignInClick}>Contact Us</button>
     </div>
   );
 };

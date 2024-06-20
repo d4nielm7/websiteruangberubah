@@ -1,10 +1,10 @@
 import React from 'react';
-import './Login.css';
+import './contact.css';
 
-const Signup = () => {
+const Contact = () => {
   return (
-    <main className="form-signin w-100 m-auto">
-      <form>
+    <main className="form-container w-100 m-auto">
+      <form className="form-signup">
         <h1 className="h3 mb-3 fw-normal">Please sign up</h1>
 
         <div className="form-floating mb-3">
@@ -38,4 +38,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Contact;

@@ -84,7 +84,7 @@
     color: #b3b3b3; /* Light grey on hover */
 }
 
-.signup-button {
+.right-button {
     background-color: #7ed957;
     color: #000;
     border: none;
@@ -95,7 +95,7 @@
     text-transform: uppercase;
   }
   
-  .signup-button:hover {
+  .right-button:hover {
     background: linear-gradient(to right, #76c7ff, #7ed957);
   }
 
