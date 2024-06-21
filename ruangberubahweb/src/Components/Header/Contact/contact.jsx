@@ -3,36 +3,34 @@ import './contact.css';
 
 const Contact = () => {
   return (
-    <main className="form-container w-100 m-auto">
+    <main className="form-container">
       <form className="form-signup">
-        <h1 className="h3 mb-3 fw-normal">Please sign up</h1>
+        <h1 className="form-title">Contact</h1>
+        <h2 className="form-subtitle">Any Questions?</h2>
 
-        <div className="form-floating mb-3">
+        <div className="form-group">
           <input className="form-control" placeholder="First Name" />
-          <label>First Name</label>
+          <label className="form-label">Name</label>
         </div>
 
-        <div className="form-floating mb-3">
-          <input className="form-control" placeholder="Last Name" />
-          <label>Last Name</label>
-        </div>
-
-        <div className="form-floating mb-3">
+        <div className="form-group">
           <input type="email" className="form-control" placeholder="name@example.com" />
-          <label>Email address</label>
+          <label className="form-label">Email address</label>
+        </div>
+        
+        <div className="form-group">
+          <input className="form-control" placeholder="Number" />
+          <label className="form-label">Number</label>
         </div>
 
-        <div className="form-floating mb-3">
-          <input type="password" className="form-control" placeholder="Password" />
-          <label>Password</label>
+        <div className="form-group">
+          <input className="form-control" placeholder="Message" />
+          <label className="form-label">Message</label>
         </div>
 
-        <div className="form-floating mb-3">
-          <input type="password" className="form-control" placeholder="Password Confirm" />
-          <label>Password Confirm</label>
-        </div>
 
-        <button className="btn btn-primary w-100 py-2" type="submit">Sign Up</button>
+
+        <button className="btn btn-primary" type="submit">Sign Up</button>
       </form>
     </main>
   );
