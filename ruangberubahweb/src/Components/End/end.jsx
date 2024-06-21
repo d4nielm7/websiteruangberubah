@@ -9,6 +9,9 @@ const End = () => {
             MARI <span style={{ color: '#7ed957' }}>#BERUBAH!</span>
           </h1>
         </div>
+        <div class = "copyright">
+                © Copyright 2024 Ruang Berubah
+            </div>
       </div>
     );
 }

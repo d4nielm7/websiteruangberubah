@@ -3,13 +3,13 @@ import './contact.css';
 
 const Contact = () => {
   return (
-    <main className="form-container">
-      <form className="form-signup">
+    <main className="form-container font-inter">
+      <form className="form-signup ">
         <h1 className="form-title">Contact</h1>
         <h2 className="form-subtitle">Any Questions?</h2>
 
-        <div className="form-group">
-          <input className="form-control" placeholder="First Name" />
+        <div className="form-group ">
+          <input className="form-control" placeholder="Name" />
           <label className="form-label">Name</label>
         </div>
 
@@ -27,8 +27,6 @@ const Contact = () => {
           <input className="form-control" placeholder="Message" />
           <label className="form-label">Message</label>
         </div>
-
-
 
         <button className="btn btn-primary" type="submit">Sign Up</button>
       </form>
