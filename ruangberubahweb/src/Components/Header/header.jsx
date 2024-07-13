@@ -18,7 +18,7 @@ const Header = () => {
   });
 
   const handleSignInClick = () => {
-    navigate('/contact');  
+    navigate('/signin');  
   };
   
   const handleLogoClick = () => {
@@ -53,7 +53,7 @@ const Header = () => {
           )}
         </animated.div>
       </div>
-      <button className='right-button' onClick={handleSignInClick}>Contact Us</button>
+      <button className='right-button' onClick={handleSignInClick}>Sign In</button>
     </div>
   );
 };
