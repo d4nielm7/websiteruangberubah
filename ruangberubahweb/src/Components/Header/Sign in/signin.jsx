@@ -1,35 +1,40 @@
 import React from 'react';
+import './signin.css';
 
 const Signin = () => {
   return (
     <main className="form-container font-inter">
-    <form className="form-signup ">
-      <h1 className="form-title">Sign In.</h1>
-      <h2 className="form-subtitle">Any Questions?</h2>
+      <form className="form-signup">
+        <h1 className="form-title">Sign up.</h1>
 
-      <div className="form-group ">
-        <input className="form-control" placeholder="Name" />
-        <label className="form-label">Name</label>
-      </div>
+        <div className="form-group">
+          <input type="text" className="form-control" placeholder="Enter your First Name" />
+          <label className="form-label">First Name</label>
+        </div>
 
-      <div className="form-group">
-        <input type="email" className="form-control" placeholder="name@example.com" />
-        <label className="form-label">Email address</label>
-      </div>
-      
-      <div className="form-group">
-        <input className="form-control" placeholder="Number" />
-        <label className="form-label">Number</label>
-      </div>
+        <div className="form-group">
+          <input type="text" className="form-control" placeholder="Enter your Last Name" />
+          <label className="form-label">Last Name</label>
+        </div>
 
-      <div className="form-group">
-        <input className="form-control" placeholder="Message" />
-        <label className="form-label">Message</label>
-      </div>
+        <div className="form-group">
+          <input type="email" className="form-control" placeholder="Enter your email" />
+          <label className="form-label">Email</label>
+        </div>
 
-      <button className="btn btn-primary" type="submit">Sign Up</button>
-    </form>
-  </main>
+        <div className="form-group">
+          <input type="password" className="form-control" placeholder="Enter your Password" />
+          <label className="form-label">Password</label>
+        </div>
+
+        <div className="form-group">
+          <input type="password" className="form-control" placeholder="Confirm Password" />
+          <label className="form-label">Confirm Password</label>
+        </div>
+
+        <button className="btn btn-primary" type="submit">Create Account</button>
+      </form>
+    </main>
   );
 };
 

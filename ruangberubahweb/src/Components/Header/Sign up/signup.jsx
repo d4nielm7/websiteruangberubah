@@ -1,35 +1,41 @@
 import React from 'react';
+import './signup.css';
 
 const Signup = () => {
+  
   return (
     <main className="form-container font-inter">
-    <form className="form-signup ">
-      <h1 className="form-title">Sign Up.</h1>
-      <h2 className="form-subtitle">Any Questions?</h2>
+      <form className="form-login">
+        <h1 className="form-title">Sign In.</h1>
+        <h2 className="form-subtitle">Login now</h2>
+        <p className="form-welcome">Hi, Welcome back 👋</p>
 
-      <div className="form-group ">
-        <input className="form-control" placeholder="Name" />
-        <label className="form-label">Name</label>
-      </div>
+        <button className="btn btn-google">Login with Google</button>
+        <p className="form-or">or Login with Email</p>
 
-      <div className="form-group">
-        <input type="email" className="form-control" placeholder="name@example.com" />
-        <label className="form-label">Email address</label>
-      </div>
-      
-      <div className="form-group">
-        <input className="form-control" placeholder="Number" />
-        <label className="form-label">Number</label>
-      </div>
+        <div className="form-group">
+          <input type="email" className="form-control" placeholder="Enter your email" />
+          <label className="form-label">Email</label>
+        </div>
 
-      <div className="form-group">
-        <input className="form-control" placeholder="Message" />
-        <label className="form-label">Message</label>
-      </div>
+        <div className="form-group">
+          <input type="password" className="form-control" placeholder="Enter your password" />
+          <label className="form-label">Password</label>
+        </div>
 
-      <button className="btn btn-primary" type="submit">Sign Up</button>
-    </form>
-  </main>
+        <div className="form-group form-remember">
+          <input type="checkbox" id="remember" />
+          <label htmlFor="remember" className="form-label-remember">Remember Me</label>
+          <a href="#" className="form-forgot">Forgot Password?</a>
+        </div>
+
+        <button className="btn btn-primary" type="submit">Login</button>
+
+        <p className="form-signup">
+          Not registered yet? <a href="#" className="form-signup-link">Create an account</a>
+        </p>
+      </form>
+    </main>
   );
 };
 
