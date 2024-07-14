@@ -17,7 +17,7 @@ const Signin = () => {
             <div className="flex-1 text-center">
               <h1 className="text-5xl font-bold font-raleway">Sign In.</h1>
             </div>
-            <button className="text-black text-2xl">&times;</button> {/* Close button */}
+            <Link to="/" className="text-black text-2xl">&times;</Link> {/* Close button */}
           </div>
           <div className="flex flex-col items-center mt-4">
             <p className="text-gray-500">Hi, Welcome back <span role="img" aria-label="wave">👋</span></p>

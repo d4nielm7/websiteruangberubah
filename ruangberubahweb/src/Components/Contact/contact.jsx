@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import background from '../../assets/pic/logo4.png'; // Ensure this path is correct
+import axios from 'axios';
+import background from '../../assets/pic/logo4.png'; 
 import bali from '../../assets/pic/bali.png';
 
 const Contact = () => {
@@ -16,10 +17,14 @@ const Contact = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form data submitted:', formData);
+        try {
+            const response = await axios.post('http://localhost:5000/send-email', formData);
+            console.log('Email sent successfully:', response.data);
+        } catch (error) {
+            console.error('Error sending email:', error);
+        }
     };
 
     return (

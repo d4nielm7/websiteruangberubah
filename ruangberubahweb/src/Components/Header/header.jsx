@@ -28,6 +28,8 @@ const Header = () => {
     window.scrollTo(0, 0); 
   };
 
+  
+
   return (
     <div className='head font-league-spartan'>
       <div className='nav-left'>
@@ -52,6 +54,7 @@ const Header = () => {
                   </div>
               </button>
               <ul>
+                <li><a href="/">Main</a></li>
                 <li><a href="#About-us">About us</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#Partners">Partners</a></li>
