@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import background from '../../assets/pic/logo4.png'; // Ensure this path is correct
+import bali from '../../assets/pic/bali.png';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -22,11 +23,15 @@ const Contact = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-black py-10 relative">
-            <h1 className="text-6xl font-raleway mb-10 mt-10 text-white">
+        <div className="relative flex flex-col items-center justify-center min-h-screen bg-black py-10">
+            <div
+                className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-10"
+                style={{ backgroundImage: `url(${bali})` }}
+            ></div>
+            <h1 className="text-6xl font-raleway mb-10 mt-10 text-white relative z-20">
                 Get in touch<span className="text-[#7ed957] ">.</span>
             </h1>
-            <div className="w-full max-w-5xl bg-white p-10 rounded-[25px] shadow-md flex flex-col items-center relative overflow-hidden" style={{ height: '690px', flexShrink: 0 }}>
+            <div className="relative z-20 w-full max-w-5xl bg-white p-10 rounded-[25px] shadow-md flex flex-col items-center overflow-hidden" style={{ height: '690px', flexShrink: 0 }}>
                 <div
                     className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-20"
                     style={{ backgroundImage: `url(${background})` }}
