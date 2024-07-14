@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-black text-white h-screen space-y-8 md:space-y-0 md:space-x-8 -mt-24"> {/*adjust mt for resolution*/}
       {/* Left */}
       <div className="flex flex-col max-w-lg md:mr-8 space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold font-raleway">
+        <h1 className="text-5xl md:text-5xl font-bold font-raleway">
           Hi, <span style={{ color: '#7ed957' }}>UBAH</span>citizens!
         </h1>
         <p className="text-lg leading-relaxed font-inter">

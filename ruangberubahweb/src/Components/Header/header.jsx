@@ -53,7 +53,7 @@ const Header = () => {
           )}
         </animated.div>
       </div>
-      <button className='right-button' onClick={handleSignInClick}>Sign In</button>
+      <button className='right-button rounded-[25px] font-raleway' onClick={handleSignInClick}>Sign In</button>
     </div>
   );
 };
