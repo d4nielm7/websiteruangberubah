@@ -95,9 +95,6 @@
     text-transform: uppercase;
   }
   
-  .right-button:hover {
-    background: linear-gradient(to right, #76c7ff, #7ed957);
-  }
 
 @media (max-width: 768px) {
     .head {
@@ -108,3 +105,4 @@
       margin-top: 1rem;
     }
 }
+
