@@ -10,7 +10,7 @@ import './assets/Font/fonts.css';
 
 const MainPage = () => {
   return (
-    <div className='MainPage'>s
+    <div className='MainPage'>
       <Home />
       <About />
       <VisionMision />
