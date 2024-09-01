@@ -11,6 +11,7 @@ import End from './Components/End/end';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 
+
 const App = () => {
   // Smooth Scroll
   const scrollRef = useRef(null);

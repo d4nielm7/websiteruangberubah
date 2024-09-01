@@ -1,4 +1,8 @@
 /* Header Component */
+#header {
+    position: fixed;
+    z-index: 1;
+  }
 
 .head {
     position: fixed;
